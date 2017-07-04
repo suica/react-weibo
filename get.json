@@ -1,0 +1,21 @@
+{
+  "user":"suicca",
+  "from":"suicca's non-exsistent iPhone",
+  "time":1238712391,
+  "face":"大概需要base64編碼的圖片……",
+  "text":"沒錯這裏就填po文的內容！！！",
+  "pic":[
+    {
+      "thumb":"base64編碼",
+      "source":"圖片的絕對地址"
+    },
+    {
+      "thumb":"base64編碼",
+      "source":"圖片的絕對地址"
+    },
+    {
+      "thumb":"base64編碼",
+      "source":"圖片的絕對地址"
+    }
+  ]
+}
