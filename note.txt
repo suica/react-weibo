@@ -1,0 +1,1 @@
+index.html是自动和index.js连在一起的嘛？
