@@ -1,8 +1,9 @@
 {
-  "user":"suicca",
+  "author":"suicca",
   "from":"suicca's non-exsistent iPhone",
   "face":"大概需要base64編碼的圖片……",
   "text":"沒錯這裏就填po文的內容！！！",
+  "deleted":false,
   "pic":[
     {
       "thumb":"base64編碼",
