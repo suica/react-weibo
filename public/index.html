@@ -20,67 +20,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <script type="text/javascript">
-    var APP_ID = 't7rxnQA8xLPRqB26SbDDmysB-gzGzoHsz';
-    var APP_KEY = 'JuzWkBKF77NHwQ6yxcN8PyRL';
 
-    AV.init({
-      appId: APP_ID,
-      appKey: APP_KEY
-    });
-
-    var fetch_post = ()=>{
-      var query = new AV.Query('Post');
-      query.equalTo('deleted',false);
-      query.find().then(function(results){
-        for(var x  of results){
-          let temp = x.attributes;
-          temp.time = x.createdAt;
-          temp.id=x.id;
-          console.log(temp)
-        }
-      },function(error){
-        alert(JSON.stringify(error));
-      })
-    }
-
-    var save_post = ({author,text,pic,from})=>{
-      var Post = AV.Object.extend('Post');
-      var post = new Post();
-
-      post.save({
-      "text": text,
-      "author":author,
-      "from":from,
-      "deleted":false,
-      //pictures remain to be done
-    }).then(function(object) {
-      // alert(JSON.stringify(object));
-      // console.log(object.createdAt);
-      alert("post id:"+object.id+"\n was successfully created at "+object.createdAt+"!!!");
-      fetch_post();
-    },function(error){
-      alert(JSON.stringify(error));
-    })
-  } -->
-
-  <!-- </script> -->
-  <script type="text/javascript">
-  $(()=>{
-    // fetch_post();
-    // $("#submit_post").click(()=>{
-    //   let obj = {
-    //     "author":$("#author").val(),
-    //     "from":"PC client",
-    //     "text":$("#post_text").val(),
-    //   }
-    //   save_post(obj);
-    // })
-    // $("#query_POST").click(()=>{
-    //   fetch_post();
-    // })
-  })
-  </script>
     <title>React App</title>
   </head>
   <body>
