@@ -19,7 +19,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- ========== Css Files ========== -->
+
+  <link href="./template/css/root.css" rel="stylesheet">
 
     <title>React App</title>
   </head>
@@ -30,15 +33,112 @@
     <div id="root">
 
     </div>
-    <!--
-    This HTML file is a template.
-    If you open it directly in the browser, you will see an empty page.
+    <!-- START CONTAINER -->
+    <div class="container-no-padding">
 
-    You can add webfonts, meta tags, or analytics to this file.
-    The build step will place the bundled scripts into the <body> tag.
+        <!-- Start Social Profile -->
+        <div class="social-profile">
 
-    To begin the development, run `npm start` or `yarn start`.
-    To create a production bundle, use `npm run build` or `yarn build`.
-  -->
+            <!-- Start Social Content -->
+            <div class="social-content clearfix">
+
+                <!-- Start Left -->
+                <div class="col-sm-12 col-md-5 col-lg-6">
+
+                    <!-- Start Post -->
+                    <div class="panel panel-default">
+                        <div class="panel-body status">
+                            <ul class="panel-tools panel-tools-hover">
+                                <li><a class="icon expand-tool"><i class="fa fa-expand"></i></a></li>
+                                <li><a class="icon closed-tool"><i class="fa fa-times"></i></a></li>
+                            </ul>
+                            <div class="who clearfix">
+                                <img src="./template/img/profileimg4.png" alt="img">
+                                <span class="name"><b>Egemem Ka</b> shared a post</span>
+                                <span class="from"><b>1 days ago</b> via Mobile, New York</span>
+                            </div>
+                            <div class="text">Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</div>
+                            <ul class="links">
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i> Like</a></li>
+                                <li><a href="#"><i class="fa fa-comment-o"></i> Comment</a></li>
+                                <li><a href="#"><i class="fa fa-share-square-o"></i> Share</a></li>
+                            </ul>
+                            <ul class="comments">
+                                <li>
+                                    <img src="./template/img/profileimg2.png" alt="img">
+                                    <span class="name">John Doe</span>
+                                    It is a historical process which mankind is carrying out in accordance with the natural laws of human development.
+                                </li>
+                                <li>
+                                    <img src="./template/img/profileimg3.png" alt="img">
+                                    <span class="name">William Throwing</span>
+                                    Seems cool.
+                                </li>
+                                <li>
+                                    <img src="./template/img/profileimg.png" alt="img">
+                                    <input type="text" class="form-control" placeholder="Post your comment...">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Post -->
+
+                    <!-- Start Post -->
+                    <div class="panel panel-default">
+                        <div class="panel-body status">
+                            <ul class="panel-tools panel-tools-hover">
+                                <li><a class="icon expand-tool"><i class="fa fa-expand"></i></a></li>
+                                <li><a class="icon closed-tool"><i class="fa fa-times"></i></a></li>
+                            </ul>
+                            <div class="who clearfix">
+                                <img src="./template/img/profileimg2.png" alt="img">
+                                <span class="name"><b>John Doe</b> shared a post</span>
+                                <span class="from"><b>1 days ago</b> via Mobile, New York</span>
+                            </div>
+                            <div class="text"><p>
+                                Astronomy compels the soul to look upward, and leads us from this world to another.
+                                That's one small step for [a] man, one giant leap for mankind.
+                                I don't know what you could say about a day in which you have seen four beautiful sunsets.
+                                Where ignorance lurks, so too do the frontiers of discovery and imagination.
+                                We want to explore. We’re curious people. Look back over history, people have put their lives at stake to go out and explore … We believe in what we’re doing. Now it’s time to go.
+                                The regret on our side is, they used to say years ago, we are reading about you in science class. Now they say, we are reading about you in history class.</p>
+
+                                There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.
+                                Across the sea of space, the stars are other suns.
+                            </div>
+                            <ul class="links">
+                                <li><a href="#"><i class="fa fa-thumbs-o-up"></i> Like</a></li>
+                                <li><a href="#"><i class="fa fa-comment-o"></i> Comment</a></li>
+                                <li><a href="#"><i class="fa fa-share-square-o"></i> Share</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Post -->
+
+                </div>
+                <!-- End Left -->
+
+            </div>
+            <!-- End Social Content -->
+
+        </div>
+        <!-- End Social Profile -->
+
+    </div>
+
+<!-- ================================================
+jQuery Library
+================================================ -->
+<script type="text/javascript" src="./template/js/jquery.min.js"></script>
+
+<!-- ================================================
+Bootstrap Core JavaScript File
+================================================ -->
+<script src="./template/js/bootstrap/bootstrap.min.js"></script>
+
+<!-- ================================================
+Plugin.js - Some Specific JS codes for Plugin Settings
+================================================ -->
+<script type="text/javascript" src="./template/js/plugins.js"></script>
 </body>
 </html>

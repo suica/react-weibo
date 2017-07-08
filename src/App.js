@@ -100,15 +100,16 @@ class App extends Component {
         }
     }
     componentDidMount(){
-        this.handleQuery()()
+        // this.handleQuery()();
+        this.testfetch();
     }
     handleQuery(){
         return () => {
             this.setState({
                 loading: true,
             });
-            const fetch_post = new AV.Query('Post').equalTo('deleted',false).find().then((response) => {
-                console.log(response)
+            let fetch_post = new AV.Query('Post').equalTo('deleted',false).find().then((response) => {
+                //console.log(response)
                 let list = response;
                 list = list.map( (single_post,index)=>{
                     let temp = single_post.attributes;
@@ -140,7 +141,6 @@ class App extends Component {
             }
             console.log(obj);
             let promise = save_post(obj).then((results)=>{
-                // alert("success!!!");
                 this.setState({text:""});
                 this.handleQuery()();
             },(error)=>{
@@ -154,6 +154,33 @@ class App extends Component {
             obj[where] = e.target.value;
             this.setState(obj);
         }
+    }
+
+    testfetch(){
+        let serialize = object=>{
+            return Object.keys(object).map(item=>{
+                return item+"="+object[item];
+            }).join('&');
+        }
+
+        var formData = new FormData(); // 当前为空
+        formData.append('id','8');
+        let sampleobject = {
+            id:8
+        }
+        // var option = {
+        //     method:"GET"
+        // }
+        let url = 'http://www.swjtukc.cn/api/v1/article/view?';
+
+        fetch(url+serialize(sampleobject))
+        .then(response=>response.json())
+        .then(data=>{
+            console.log(data);
+        })
+        .catch(e => {
+            console.log("Error")
+        })
     }
     render() {
         return (
@@ -174,7 +201,7 @@ class App extends Component {
                         <button type="button" name="button"  onClick={this.handleQuery()}>Query!</button>
                         <span hidden={!this.state.loading}>loading!!!</span>
                     </div>
-                     <CardList  list={this.state.post_list} />
+                    <CardList  list={this.state.post_list} />
                 </div>
             </div>
         );
